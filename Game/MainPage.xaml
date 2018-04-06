@@ -1,0 +1,47 @@
+﻿<Page
+    x:Class="Game.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Game"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Height="600"
+    Width="800">
+
+
+    <Grid Name="GridArea" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0,600,600">
+        <Canvas Name="GameArea" Background="CornflowerBlue" HorizontalAlignment="Left" Height="600" VerticalAlignment="Top" Width="800">
+            <Grid Canvas.Left="0" Canvas.Top="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200" />
+                    <ColumnDefinition Width="200" />
+                    <ColumnDefinition Width="200" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200" />
+                    <RowDefinition Height="200" />
+                    <RowDefinition Height="200" />
+                </Grid.RowDefinitions>
+
+                <Button Name ="Btn1" Grid.Column="0" Grid.Row="0" Height="200" Margin="0,0,0,0" Width="200" FontSize="150" Click="Btn_Click" />
+                <Button  Name ="Btn2" Grid.Column="0" Grid.Row="1" Height="200" Margin="0,0,0,0" Width="200" FontSize="150" Click="Btn_Click" />
+                <Button  Name ="Btn3" Grid.Column="0" Grid.Row="2" Height="200" Margin="0,0,0,0" Width="200" FontSize="150" Click="Btn_Click"  />
+                <Button  Name ="Btn4" Grid.Column="1" Grid.Row="0" Height="200" Margin="0,0,0,0" Width="200" FontSize="150" Click="Btn_Click" />
+                <Button  Name ="Btn5" Grid.Column="1" Grid.Row="1" Height="200" Margin="0,0,0,0" Width="200" FontSize="150" Click="Btn_Click" />
+                <Button  Name ="Btn6" Grid.Column="1" Grid.Row="2" Height="200" Margin="0,0,0,0" Width="200" FontSize="150" Click="Btn_Click" />
+                <Button  Name ="Btn7" Grid.Column="2" Grid.Row="0" Height="200" Margin="0,0,0,0" Width="200" FontSize="150" Click="Btn_Click" />
+                <Button  Name ="Btn8" Grid.Column="2" Grid.Row="1" Height="200" Margin="0,0,0,0" Width="200" FontSize="150" Click="Btn_Click" />
+                <Button  Name ="Btn9" Grid.Column="2" Grid.Row="2" Height="200" Margin="0,0,0,0" Width="200" FontSize="150" Click="Btn_Click" />
+            </Grid>
+            <Button Name="BtnOver" Content="Start Over"  Height="67" Canvas.Left="632" Canvas.Top="41" Width="118" Click="BtnOver_Click" ></Button>
+
+
+
+        </Canvas>
+
+
+
+
+    </Grid>
+</Page>
